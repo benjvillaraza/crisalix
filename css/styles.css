@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+* {
+	font-family: 'Open Sans', sans-serif;
+}
+
+a {
+	color: gray;
+	-webkit-transition: color .5s ease;
+	-moz-transition: color .5s ease;
+	-ms-transition: color .5s ease;
+	-o-transition: color .5s ease;
+	transition: color .5s ease;	
+}
+
+a:hover {
+	color: #573b5d;
+	text-decoration: none;
+}
+
+.container {
+  max-width: 1170px;
+  width: 100%;
+}
+
+header {
+	padding: 20px 0;
+}
+
+.top_menu li {
+	padding: 0 10px;
+	font-size: 12px;
+}
+
+.with_borders {
+	border-left: 1px solid #000;
+}
+
+.main_menu {
+	margin-top: 30px;
+}
+
+.main_menu li {
+	padding: 0 20px;
+}
+
+@media only screen and (max-width: 768px) {
+	.top_menu,
+	.logo {
+		float: none !important;
+		text-align: center;
+	}
+
+	.top_menu {
+
+	}
+}
