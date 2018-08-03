@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
 
 * {
 	font-family: 'Open Sans', sans-serif;
@@ -27,6 +28,22 @@ header {
 	padding: 20px 0;
 }
 
+.col-xs-5ths,
+.col-sm-5ths,
+.col-md-5ths,
+.col-lg-5ths {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.col-xs-5ths {
+    width: 18%;
+    float: left;
+    margin: 1%;
+}
+
 .top_menu li {
 	padding: 0 10px;
 	font-size: 12px;
@@ -40,18 +57,255 @@ header {
 	margin-top: 30px;
 }
 
+.main_menu ul {	
+	display: inline-block;
+}
+
 .main_menu li {
-	padding: 0 20px;
+	padding: 0 15px;
+}
+
+.request_3d {
+	position: relative;
+	display: inline-block;
+	width: 191px;
+}
+
+.purple_button {
+	border: none;
+	border-radius: 15px;
+	padding: 5px 10px;
+	color: #fff;
+	background: #573b5d;
+}
+
+.request_3d span {
+  position: absolute;
+  font-size: 10px;
+  right: 0;
+  text-transform: uppercase;
+}
+
+.banner {
+	background: url('../images/AR-banner.jpg') no-repeat;
+	max-width: 1140px;
+	width: 100%;
+	height: 681px;
+	background-size: 100% 100%;
+	margin-top: 10px;
+	position: relative;
+}
+
+.ar_badge {
+	position: absolute;
+  left: 30px;
+  width: 180px;
+  bottom: 30px;
+}
+
+.ar_badge img {
+	width: 100%;
+}
+
+.purple_side {
+  position: absolute;
+  bottom: -80px;
+  background: rgba(87, 59, 93, 0.7);
+  right: 0;
+  color: #fff;
+  padding: 40px 20px;
+  width: 45%;
+  text-align: center;
+}
+
+.purple_side div {
+	font-family: 'Dancing Script', cursive;
+  font-size: 90px;
+  letter-spacing: -4px;
+  margin-bottom: 30px;
+}
+
+.purple_side a {
+	text-transform: uppercase;
+	text-align: right;
+	display: block;
+	color: #fff;
+}
+
+.main {
+	margin-top: 50px;
+	text-align: center;
+}
+
+.main h3 {
+	text-transform: uppercase;
+}
+
+.main .purple_button {
+	padding: 10px 20px;
+}
+
+.link_body {
+	background: url(../images/body.gif) no-repeat;
+	background-size: cover;
+}
+
+.link_breast {
+	background: url(../images/breast.gif) no-repeat;
+	background-size: cover;
+}
+
+.link_face {
+	background: url(../images/face.gif) no-repeat;
+	background-size: cover;
+}
+
+.link_skin_care {
+	background: url(../images/skin_care.gif) no-repeat;
+	background-size: cover;
+}
+
+.link_men {
+	background: url(../images/men.gif) no-repeat;
+	background-size: cover;
+}
+
+.link {
+	min-height: 225px;
+}
+
+@media only screen and (max-width: 1024px) {
+	.logo img {
+		width: 250px;
+	}
+
+	.main_menu li {
+		padding: 0 7px;
+	}
+
+	.banner {
+		height: 594px;
+	}
+
+	.ar_badge {
+		width: 140px;
+	}
+
+	.purple_side div {
+		font-size: 80px;
+	}
+}
+
+@media only screen and (max-width: 992px) {
+	.banner {
+		height: 574px;
+	}
+
+	.ar_badge {
+		width: 130px;
+	}
+
+	.purple_side div {
+		font-size: 70px;
+	}
 }
 
 @media only screen and (max-width: 768px) {
+	.main_menu,
 	.top_menu,
 	.logo {
 		float: none !important;
 		text-align: center;
 	}
 
-	.top_menu {
+	.main_menu ul,
+	.request_3d {
+		display: block;
+	}
 
+	.request_3d {		
+		margin: 10px auto 0;
+	}
+
+	.banner {
+		margin-top: 20px;
+		height: 441px;
+	}
+
+	.ar_badge {
+		width: 100px;
+	}
+
+	.purple_side div {
+		font-size: 50px;
+		letter-spacing: -2px;
+	}
+
+	.main {
+		margin-top: 70px;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.banner {
+		height: 341px;
+	}
+
+	.ar_badge {
+		width: 100px;
+	}
+
+	.purple_side div {
+		font-size: 45px;
+	}
+
+	.col-xs-5ths {
+		width: 100%;
+		float: none;
+	}
+}
+
+@media only screen and (max-width: 425px) {
+	.banner {
+		margin-top: 20px;
+		height: 236px;
+	}
+
+	.ar_badge {
+		width: 70px;
+		bottom: 15px;
+	}
+
+	.purple_side div {
+		font-size: 30px;
+	}			
+}
+
+@media only screen and (max-width: 375px) {
+	.banner {
+		height: 207px;
+	}
+
+	.ar_badge {
+		width: 60px;
+	}
+
+	.purple_side div {
+		font-size: 20px;
+		letter-spacing: 0;
+	}		
+}
+
+@media only screen and (max-width: 320px) {
+	.banner {
+		height: 174px;
+	}
+
+	.ar_badge {
+		width: 50px;
+	}
+
+	.purple_side {
+		padding: 40px 10px;
 	}
 }
